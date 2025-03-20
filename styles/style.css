@@ -1,0 +1,1190 @@
+* {
+  font-family: "Roboto";
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hero-block {
+  background-color: #1FBCEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+.hero-block .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 109px;
+}
+.hero-block .top h1 {
+  font-size: 77px;
+  font-weight: 700;
+  max-width: 677px;
+  color: White;
+  font-family: "Inter";
+}
+.hero-block .bot {
+  display: flex;
+  flex-direction: column;
+}
+.hero-block .bot .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+.hero-block .bot .buttons button {
+  padding: 24px 45px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 6px;
+}
+.hero-block .bot .buttons button span {
+  color: #1FBCEE;
+}
+
+.con {
+  background: url(../img/bgRight.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.con .fund-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1080px;
+  min-width: 1600px;
+}
+.con .fund-block .about-fund {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 60px;
+}
+.con .fund-block .about-fund .text {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.con .fund-block .about-fund .text h2 {
+  font-size: 52px;
+  color: #3A3A3A;
+}
+.con .fund-block .about-fund .text p {
+  font-size: 20px;
+  color: #353D42;
+  max-width: 728px;
+}
+.con .fund-block .about-fund .stats {
+  display: flex;
+  gap: 140px;
+}
+.con .fund-block .about-fund .stats .stat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.con .fund-block .about-fund .stats .stat .num {
+  color: #00F0FF;
+  font-size: 70px;
+  font-weight: 700;
+}
+.con .fund-block .about-fund .stats .stat p {
+  color: #1FBCEE;
+  font-size: 18px;
+  font-weight: 700;
+}
+.con .fund-block .about-fund .stats .line {
+  width: 1px;
+  height: 129px;
+  background-color: #E1E2E5;
+}
+.con .fund-block .about-fund .or {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.con .fund-block .about-fund .or .be {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.con .fund-block .about-fund .or .be p {
+  font-size: 20px;
+  color: #1FBCEE;
+}
+.con .fund-block .about-fund .or p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.1882352941);
+}
+.con .fund-block .fund-container {
+  max-width: 800px;
+  height: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.con .fund-block .fund-container .slider-item {
+  position: relative;
+  display: inline-block;
+}
+.con .fund-block .fund-container .slider-item img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.con .fund-block .fund-container .slider-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(217, 217, 217, 0.7);
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-size: 20px;
+  padding: 60px;
+  gap: 12px;
+}
+.con .fund-block .fund-container .slider-item .overlay h3 {
+  font-family: "Inter";
+  font-size: 32px;
+  color: #3A3A3A;
+  font-weight: 700;
+}
+.con .fund-block .fund-container .slider-item .overlay p {
+  font-size: 15px;
+  font-family: "Inter";
+  color: #3A3A3A;
+}
+.con .fund-block .fund-container .slider-item.active .overlay {
+  opacity: 1;
+}
+.con .fund-block .fund-container .fund-title {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.con .fund-block .fund-container .slider {
+  position: relative;
+  overflow: hidden;
+}
+.con .fund-block .fund-container .slider .slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.con .fund-block .fund-container .slider .slider-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+.con .fund-block .fund-container .slider .slider-item img {
+  width: 100%;
+  display: block;
+}
+.con .fund-block .fund-container .slider .slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  border-radius: 50%;
+}
+.con .fund-block .fund-container .slider .slider-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.con .fund-block .fund-container .slider .prev {
+  left: 10px;
+}
+.con .fund-block .fund-container .slider .next {
+  right: 10px;
+}
+.con .fund-block .fund-container .charity-section {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.con .fund-block .fund-container .charity-section .charity-title {
+  color: #1FBCEE;
+  font-size: 24px;
+  font-weight: 700;
+}
+.con .fund-block .fund-container .charity-section .charity-text {
+  font-size: 16px;
+  color: #353D42;
+}
+
+.sbori-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.sbori-block .title h2 {
+  color: #3A3A3A;
+  font-size: 52px;
+  font-weight: 700;
+}
+.sbori-block .columns {
+  display: flex;
+  gap: 40px;
+}
+.sbori-block .columns .left-column {
+  background-color: #1FBCEE;
+  border-radius: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  padding: 164px 100px;
+  max-width: 679px;
+}
+.sbori-block .columns .left-column .text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.sbori-block .columns .left-column .text h3 {
+  font-size: 42px;
+  color: white;
+}
+.sbori-block .columns .left-column .text p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.sbori-block .columns .left-column .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.sbori-block .columns .left-column .bottom .info {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.sbori-block .columns .left-column .bottom .info img {
+  width: 28px;
+  height: 32px;
+}
+.sbori-block .columns .left-column .bottom .info .num {
+  font-size: 44px;
+  color: white;
+  font-weight: 700;
+}
+.sbori-block .columns .left-column .bottom .info p {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.sbori-block .columns .left-column .bottom button {
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3A3A3A;
+  background-color: white;
+}
+.sbori-block .columns .right-column .slider .next {
+  position: relative;
+  top: -750px;
+  left: 665px;
+  padding: 20px;
+  border-radius: 100%;
+}
+.sbori-block .columns .right-column .slider .prev {
+  position: relative;
+  top: 240px;
+  right: 30px;
+  padding: 20px;
+  border-radius: 100%;
+}
+.sbori-block .columns .right-column .slider .slider-wrapper .slider-item {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+.sbori-block .columns .right-column .slider .slider-wrapper .slider-item .photo-tochki {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.sbori-block .columns .right-column .slider .slider-wrapper .slider-item .photo-tochki .tochki {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.sbori-block .columns .right-column .slider .slider-wrapper .slider-item .photo-tochki .tochki .tochka {
+  width: 10px;
+  height: 10px;
+  background-color: #D4D4D4;
+  border-radius: 100%;
+}
+.sbori-block .columns .right-column .slider .slider-wrapper .slider-item .photo-tochki .tochki .tochka.active {
+  background-color: #1FBCEE;
+}
+.sbori-block .columns .right-column .slider .info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.sbori-block .columns .right-column .slider .info-block h3 {
+  color: #3A3A3A;
+  font-size: 42px;
+  font-weight: 700;
+}
+.sbori-block .columns .right-column .slider .info-block h3 span {
+  color: #1FBCEE;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz .help {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz .help .text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3A3A3A;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz .help .text p {
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.3;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz .diagnoz {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz .diagnoz .text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3A3A3A;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz .diagnoz .text p {
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.3;
+}
+.sbori-block .columns .right-column .slider .info-block .help-diagnoz-bar {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.sbori-block .columns .right-column .slider .info-block .progress-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sbori-block .columns .right-column .slider .info-block .progress-circle {
+  transform: rotate(-90deg);
+}
+.sbori-block .columns .right-column .slider .info-block .progress-background {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 12;
+}
+.sbori-block .columns .right-column .slider .info-block .progress-bar {
+  fill: none;
+  stroke: #1FBCEE;
+  stroke-width: 14;
+  stroke-linecap: round;
+  stroke-dasharray: 502.4;
+  stroke-dashoffset: calc(502.4 - var(--percentage) * 5.024);
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+.sbori-block .columns .right-column .slider .info-block .progress-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sbori-block .columns .right-column .slider .info-block .progress-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3A3A3A;
+  opacity: 0.4;
+  margin: 0;
+}
+.sbori-block .columns .right-column .slider .info-block .progress-subtext {
+  font-size: 14px;
+  color: #3A3A3A;
+  opacity: 0.3;
+  margin: 0;
+}
+.sbori-block .columns .right-column .slider .info-block .progress-label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1FBCEE;
+  margin: 0;
+}
+.sbori-block .columns .right-column .slider .info-block .btns {
+  display: flex;
+  gap: 31px;
+}
+.sbori-block .columns .right-column .slider .info-block .btns .help {
+  width: 236px;
+  color: white;
+  background-color: #1FBCEE;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+.sbori-block .columns .right-column .slider .info-block .btns button {
+  width: 236px;
+  color: black;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.con {
+  padding-top: 200px;
+}
+.con .aaa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.con .donat-card {
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.con .donat-card h1 {
+  font-size: 80px;
+}
+.con .donat-card .donation-container {
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+}
+.con .donat-card .donation-container .donation-form {
+  display: flex;
+  flex-direction: column;
+}
+.con .donat-card .donation-container .donation-form .payment-method {
+  font-size: 22px;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.con .donat-card .donation-container .donation-form .amount-options {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.con .donat-card .other-info {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: start;
+}
+.con .donat-card .other-info p {
+  font-size: 18px;
+  color: #9B9B9B;
+  text-align: start;
+}
+.con .donat-card .other-info a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1FBCEE;
+}
+.con .donat-card .custom-amount,
+.con .donat-card .comment {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.con .donat-card .amount-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+}
+.con .donat-card .amount-btn:hover {
+  background: #0062cc;
+}
+.con .donat-card .donate-monthly,
+.con .donat-card .donate-once {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.con .donat-card .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.con .donat-card .buttons .donate-monthly {
+  background: #1FBCEE;
+  color: white;
+}
+.con .donat-card .buttons .donate-once {
+  border: 1px solid #1FBCEE;
+  color: #1FBCEE;
+  background: white;
+}
+.con .donat-card label {
+  display: block;
+  text-align: start;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.con .donat-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+.con .donat-card p {
+  font-size: 14px;
+  color: #C2C4C6;
+  text-align: start;
+  padding: 10px 0 0 0;
+}
+
+.con2 {
+  background: url(../img/bgLeft.png);
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+.con2 .aaa {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1080px;
+  max-width: 1600px;
+}
+.con2 .aaa .partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.con2 .aaa .partners .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.con2 .aaa .partners .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 50%;
+  max-width: 500px;
+}
+.con2 .aaa .partners .text-content h2 {
+  font-size: 52px;
+  font-weight: bold;
+}
+.con2 .aaa .partners .text-content h2 span {
+  color: #009ee3;
+}
+.con2 .aaa .partners .text-content p {
+  font-size: 17px;
+}
+.con2 .aaa .partners .text-content .gratitude {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.con2 .aaa .partners .text-content .button {
+  background-color: #1FBCEE;
+  color: white;
+  border: none;
+  max-width: 279px;
+  padding: 24px 86px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.con2 .aaa .partners .partners-list {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.con2 .aaa .partners .partners-list .partner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+.con2 .aaa .partners .partners-list .partner .icon {
+  color: #009ee3;
+  font-size: 24px;
+}
+.con2 .aaa .partners .partners-list .partner h3 {
+  font-size: 20px;
+  color: #1FBCEE;
+  margin: 0;
+}
+.con2 .aaa .partners .partners-list .partner p {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+.con {
+  background: url(../img/bgLeft.png);
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+.con .faces-block {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1080px;
+  min-width: 1600px;
+}
+.con .faces-block .faces-fund {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 140px;
+}
+.con .faces-block .faces-fund .text {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.con .faces-block .faces-fund .text h2 {
+  font-size: 52px;
+  color: #3A3A3A;
+}
+.con .faces-block .faces-fund .text p {
+  font-size: 20px;
+  color: #353D42;
+  max-width: 728px;
+}
+.con .faces-block .faces-fund button {
+  padding: 26px 54px;
+  border-radius: 12px;
+  background: #1FBCEE;
+  color: white;
+  font-size: 24px;
+}
+.con .faces-block .fund-container {
+  display: flex;
+  height: 60%;
+  overflow: hidden;
+  justify-content: center;
+  gap: 10px;
+}
+.con .faces-block .fund-container .card {
+  display: flex;
+}
+.con .faces-block .fund-container .card img {
+  max-width: 150px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.con {
+  background: url(../img/bgRight.png);
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+.con .news {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.con .news h2 {
+  font-size: 52px;
+}
+.con .cards {
+  display: flex;
+}
+.con .cards .big-card {
+  background-color: rgb(246, 247, 249);
+  border-radius: 16px;
+}
+.con .cards .big-card .content {
+  padding: 24px;
+}
+.con .cards .big-card .content .kartinki {
+  display: flex;
+  gap: 371px;
+  align-items: flex-start;
+}
+.con .cards .big-card .content .text {
+  max-width: 644px;
+}
+.con .cards .big-card .content .text .zagolovok {
+  font-size: 16px;
+  color: #7C8A9A;
+}
+.con .cards .big-card .content .text p {
+  font-size: 27px;
+  color: #313131;
+  font-weight: 500;
+}
+.con .cards .first-row {
+  display: flex;
+}
+.footer {
+  background-color: #1FBCEE;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 300px;
+  padding: 200px 100px;
+  gap: 40px;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+.footer .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer .nav-links {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+}
+.footer .nav-links a {
+  color: white;
+}
+.footer .infa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  text-align: start;
+}
+.footer .infa .contact-info {
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .infa .contact-info .ss {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer .infa .social-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  flex-direction: column;
+}
+.footer .buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.footer .buttons .btn {
+  background-color: white;
+  color: #009ee3;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 430px) {
+  .hero-block .top h1 {
+    font-size: 32px !important;
+    text-align: center;
+    width: 250px !important;
+  }
+  .hero-block .top img {
+    width: 400px !important;
+  }
+  .hero-block .bot .buttons {
+    gap: 5px !important;
+  }
+  .hero-block .bot .buttons button {
+    padding: 2px 7px !important;
+  }
+  .fund-block .about-fund {
+    align-items: center !important;
+  }
+  .fund-block .about-fund .text {
+    align-items: center;
+    gap: 40px !important;
+  }
+  .fund-block .about-fund .text p {
+    font-size: 16px !important;
+    text-align: center;
+    width: 50% !important;
+  }
+  .fund-block .about-fund .stats {
+    gap: 40px !important;
+  }
+  .fund-block .about-fund .or {
+    width: 400px !important;
+  }
+  .fund-block .about-fund .or p {
+    font-size: 16px !important;
+  }
+  .fund-block .fund-container .slider .slider-wrapper .slider-item {
+    justify-content: center !important;
+  }
+  .fund-block .fund-container .slider .slider-wrapper .slider-item img {
+    width: 380px !important;
+  }
+  .fund-block .fund-container .slider .slider-wrapper .slider-item .overlay {
+    justify-content: center !important;
+  }
+  .fund-block .fund-container .slider .slider-wrapper .slider-item .overlay h3 {
+    font-size: 12px !important;
+  }
+  .fund-block .fund-container .slider .slider-wrapper .slider-item .overlay p {
+    font-size: 10px !important;
+  }
+  .charity-section {
+    max-width: 410px;
+  }
+  .sbori-block {
+    margin-top: 50px;
+  }
+  .sbori-block h2 {
+    font-size: 42px !important;
+    text-align: center;
+  }
+  .sbori-block .columns {
+    align-items: center;
+  }
+  .sbori-block .columns .left-column {
+    padding: 30px !important;
+    max-width: 420px !important;
+  }
+  .sbori-block .columns .left-column .text {
+    max-width: 420px !important;
+    align-items: center !important;
+  }
+  .sbori-block .columns .left-column .text p {
+    font-size: 14px !important;
+  }
+  .sbori-block .columns .right-column {
+    max-width: 420px;
+  }
+  .sbori-block .columns .right-column .slider .next {
+    top: -579px;
+    left: 390px;
+  }
+  .sbori-block .columns .right-column .slider .prev {
+    left: -15px;
+  }
+  .sbori-block .columns .right-column .slider .slider-wrapper .slider-item .info-block .help-diagnoz-bar {
+    gap: 10px !important;
+  }
+  .sbori-block .columns .right-column .slider .slider-wrapper .slider-item .info-block .help-diagnoz-bar .help-diagnoz .help .text h4 {
+    font-size: 14px !important;
+  }
+  .sbori-block .columns .right-column .slider .slider-wrapper .slider-item .info-block .help-diagnoz-bar .help-diagnoz .help .text p {
+    font-size: 12px !important;
+  }
+  .sbori-block .columns .right-column .slider .slider-wrapper .slider-item .info-block .help-diagnoz-bar .help-diagnoz .diagnoz .text h4 {
+    font-size: 14px !important;
+  }
+  .sbori-block .columns .right-column .slider .slider-wrapper .slider-item .info-block .help-diagnoz-bar .help-diagnoz .diagnoz .text p {
+    font-size: 12px !important;
+  }
+  .con .donat-card h1 {
+    font-size: 42px !important;
+  }
+  .donation-container {
+    padding: 5px !important;
+  }
+  .aaa {
+    flex-direction: column !important;
+    max-width: 420px !important;
+  }
+  .aaa .donation-form {
+    max-width: 420px;
+  }
+  .aaa .other-info {
+    align-items: center !important;
+  }
+  .container {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+  .container .text-content button {
+    padding: 20px !important;
+  }
+  .container .partner {
+    flex-direction: column;
+  }
+  .faces-block .faces-fund .text {
+    align-items: center;
+  }
+  .faces-block .faces-fund .text p {
+    font-size: 16px !important;
+    max-width: 220px !important;
+    text-align: center;
+  }
+  .faces-block .fund-container {
+    flex-direction: column !important;
+    overflow: visible !important;
+    margin-top: 70px;
+  }
+  .faces-block .fund-container .card img {
+    height: 100%;
+  }
+  .news {
+    margin-top: 70px;
+  }
+  .footer {
+    gap: 20px;
+  }
+  .footer .footer-content {
+    align-items: center !important;
+  }
+  .footer .footer-content img {
+    width: 150px !important;
+  }
+  .footer .footer-content .nav-links {
+    gap: 14px !important;
+  }
+  .footer .footer-content .nav-links a {
+    font-size: 10px !important;
+  }
+  .footer .footer-content .buttons .btn {
+    padding: 6px !important;
+    font-size: 12px !important;
+  }
+  .footer .contact-info {
+    gap: 20px;
+    flex-direction: column !important;
+  }
+  .footer .contact-info .ss {
+    text-align: center;
+  }
+  .footer .contact-info .ss img {
+    width: 240px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-block .bot .buttons button {
+    font-size: 14px !important;
+    padding: 12px 24px;
+  }
+  .donat-card {
+    gap: 30px !important;
+  }
+  .donat-card h1 {
+    text-align: center;
+  }
+  .partners {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-content,
+  .partners-list {
+    width: 100%;
+  }
+  .footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer {
+    padding: 15px !important;
+  }
+  .footer .footer-content {
+    align-items: center !important;
+  }
+  .footer .footer-content img {
+    width: 150px !important;
+  }
+  .footer .footer-content .nav-links {
+    gap: 14px !important;
+  }
+  .footer .footer-content .nav-links a {
+    font-size: 14px;
+  }
+  .footer .footer-content .buttons .btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .footer .contact-info {
+    gap: 20px;
+  }
+  .footer .contact-info .ss {
+    font-size: 14px !important;
+  }
+  .footer .contact-info .ss img {
+    width: 240px;
+  }
+}
+@media (max-width: 1440px) {
+  .con {
+    padding-top: 100px;
+  }
+  .top {
+    flex-direction: column;
+  }
+  .top h1 {
+    font-size: 52px !important;
+    max-width: 40% !important;
+  }
+  .top img {
+    width: 500px;
+    height: 200px;
+  }
+  .fund-block {
+    flex-direction: column;
+    gap: 90px;
+  }
+  .fund-block .text h2 {
+    text-align: center;
+  }
+  .fund-block .fund-title {
+    text-align: center;
+  }
+  .sbori-block .columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .donat-card h1 {
+    font-size: 52px !important;
+  }
+  .faces-block {
+    flex-direction: column !important;
+    gap: 40px;
+  }
+  .faces-block .text h2 {
+    text-align: center;
+  }
+  .faces-block .faces-fund {
+    align-items: center !important;
+    gap: 40px !important;
+  }
+  .footer {
+    padding: 50px;
+  }
+  .footer .footer-content {
+    align-items: center !important;
+  }
+  .footer .footer-content img {
+    width: 250px !important;
+  }
+  .footer .footer-content .nav-links {
+    gap: 20px !important;
+  }
+  .footer .contact-info .ss {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1080px) {
+  .aaa {
+    height: 100% !important;
+  }
+  .container {
+    justify-content: center !important;
+    gap: 20px !important;
+    margin-top: 50px;
+  }
+  .container .text-content {
+    gap: 30px !important;
+  }
+  .container .text-content h2 {
+    font-size: 42px !important;
+  }
+  .container .text-content p {
+    font-size: 16px !important;
+  }
+  .footer {
+    padding: 30px;
+  }
+  .footer .footer-content {
+    align-items: center !important;
+  }
+  .footer .footer-content img {
+    width: 150px !important;
+  }
+  .footer .footer-content .nav-links {
+    gap: 14px !important;
+  }
+  .footer .footer-content .nav-links a {
+    font-size: 14px;
+  }
+  .footer .footer-content .buttons .btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .footer .contact-info .ss {
+    font-size: 14px;
+  }
+  .footer .contact-info .ss img {
+    width: 240px;
+  }
+}/*# sourceMappingURL=style.css.map */
