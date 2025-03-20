@@ -771,13 +771,14 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-between; 
+        gap: 50px;
         h2 {
             font-size: 52px;
         }
     }
     .cards{
         display: flex;
+        gap: 27px;
         .big-card{
             background-color: rgba(246, 247, 249, 1);
             border-radius: 16px;
@@ -802,11 +803,37 @@ body {
                 }
             }
         }
-        .first-row{
+        .rows{
             display: flex;
-            .card{
-                .content{
-                    
+            flex-direction: column;
+            gap: 36px;
+            .row{
+                display: flex;
+                gap: 36px;
+                .card{
+                    background-color: rgba(246, 247, 249, 1);
+                    border-radius: 16px;
+                    max-width: 353px;
+                    .content{
+                        padding: 24px;
+                        .kartinki{
+                            display: flex;
+                            gap: 183px;
+                            align-items: flex-start;
+                        }
+                        .text{
+                            min-width: 305px;
+                            .zagolovok{
+                                font-size: 16px;
+                                color: #7C8A9A;
+                            }
+                            p{
+                                font-size: 27px;
+                                color: #313131;
+                                font-weight: 500;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1109,6 +1136,27 @@ body {
             }
         }
     }
+    .cards{
+        align-items: center;
+        .big-card{
+            .kartinki{
+                gap: 50px !important;
+                .earth{
+                    width: 150px;
+                }
+            }
+            .text{
+                p{
+                    font-size: 24px !important;
+                }
+            }
+        }
+        .rows{
+            .row{
+                flex-direction: column;
+            }
+        }
+    }
 }
 @media (max-width: 768px) {
     .hero-block{
@@ -1238,6 +1286,17 @@ body {
             }
         }
     }
+    .news{
+        .cards{
+            gap: 20px;
+            .rows{
+                gap: 25px;
+                .row{
+                    gap: 25px;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 1080px){
    .aaa{
@@ -1285,5 +1344,9 @@ body {
             }
         }
     }
+    
+}
+.cards{
+    flex-direction: column;
 }
 }
